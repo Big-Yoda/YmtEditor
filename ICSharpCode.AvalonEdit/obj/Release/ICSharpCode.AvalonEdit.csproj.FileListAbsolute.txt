@@ -1,0 +1,14 @@
+D:\3D Modelling\Tools\YMT Editor\SourceCode\bin\Release\ICSharpCode.AvalonEdit.dll
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\ICSharpCode.AvalonEdit.csprojAssemblyReference.cache
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\ICSharpCode.AvalonEdit_MarkupCompile.cache
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\ICSharpCode.AvalonEdit_MarkupCompile.lref
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\CodeCompletion\CompletionList.baml
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\CodeCompletion\InsightWindow.baml
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\Search\SearchPanel.baml
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\Search\DropDownButton.baml
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\TextEditor.baml
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\themes\generic.baml
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\ICSharpCode.AvalonEdit.g.resources
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\ICSharpCode.AvalonEdit.dll
+D:\3D Modelling\Tools\YMT Editor\SourceCode\ICSharpCode.AvalonEdit\obj\Release\ICSharpCode.AvalonEdit.csproj.CoreCompileInputs.cache

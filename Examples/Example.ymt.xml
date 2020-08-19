@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CPedVariationInfo>
+ <bHasTexVariations value="false" />
+ <bHasDrawblVariations value="false" />
+ <bHasLowLODs value="false" />
+ <bIsSuperLOD value="false" />
+<!--What comments that are enabled/disabled. The number will always be the lowest on the right and then following number going up. 255 means disabled.-->
+<!--As you can see below, 0 255 1, if I were to enable the 2nd option the 1 would be moved and the current 1 would be to. e.g. (0 255 1) becomes (0 1 2)-->
+<!--Another example would be (4 5 6 255 255 255 7) becomes (4 5 6 7 255 8 9) so 7 becomes 9 because two more slots got enabled.-->
+<!--I will provide info on what each component uses as name/ID at the bottom of the page-->
+ <availComp>0 255 1 2 3 255 255 255 4 255 255 255</availComp>
+ <!--Component data is the container of the enabled/disabled components. this one will have more items added to it as we enable or disable components..-->
+ <!--The items follow the same order as above meaning that if we enable a componen, the item will have to go in the same order-->
+ <!--Example would be (0 255 1) if we enable slot 2 we would need to add an item in between the two existing items-->
+ <aComponentData3 itemType="CPVComponentData">
+<!--Items contain two things, roughly: the amount of models in a given componen and the amount of textures for the given model.-->
+<!--numAvailTex need to update with the amount of texture in a component, this can be by looking at how many items are in the <aTexData itemType="CPVTextureData"> part-->
+  <Item> <!--Component 0-->
+   <numAvailTex value="2" />
+   <aDrawblData3 itemType="CPVDrawblData">
+<!--The item inside aDrawblData3 is models or drawables, meaning that if we/add remove we change the number of available models-->
+<!--So if we were to add more models we would need another item added below this item, but still in the same XML item, e.g. the same component-->
+<!--The values usually stay the same, e.g. propMask can be set to 1 as default (if further changes are needed we can manually change the XML)-->
+    <Item> <!--Drawable 1-->
+     <propMask value="17" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+<!--This item defines the amount of textures in a given model-->
+<!--If we define 6 textures in the UI, it should have 6 items inside aTexData-->
+<!--TexId needs to be changable and I will be providing a list with what each ID means-->
+      <Item> <!--Texture 1-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item> <!--Texture 2-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+   </aDrawblData3>
+  </Item>
+<!--This component has more than one drawable and multiple textures-->
+  <Item> <!--Component 1-->
+   <numAvailTex value="6" /> <!--Two drawables with three textures each, six in total-->
+   <aDrawblData3 itemType="CPVDrawblData">
+    <Item> <!--Drawable 1-->
+     <propMask value="25" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item> <!--Texture 1-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item> <!--Texture 2-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item> <!--Texture 3-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+    <Item> <!--Drawable 2-->
+     <propMask value="25" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item> <!--Texture 1-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item> <!--Texture 2-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item> <!--Texture 3-->
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+   </aDrawblData3>
+  </Item>
+  <Item> <!--Component 2-->
+   <numAvailTex value="3" />
+   <aDrawblData3 itemType="CPVDrawblData">
+    <Item>
+     <propMask value="17" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item>
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+   </aDrawblData3>
+  </Item>
+  <Item> <!--Component 3-->
+   <numAvailTex value="6" />
+   <aDrawblData3 itemType="CPVDrawblData">
+    <Item>
+     <propMask value="1" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+    <Item>
+     <propMask value="17" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item>
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="1" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+   </aDrawblData3>
+  </Item>
+  <Item> <!--Component 4-->
+   <numAvailTex value="4" />
+   <aDrawblData3 itemType="CPVDrawblData">
+    <Item>
+     <propMask value="1" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+    <Item>
+     <propMask value="1" />
+     <numAlternatives value="0" />
+     <aTexData itemType="CPVTextureData">
+      <Item>
+       <texId value="0" />
+       <distribution value="255" />
+      </Item>
+     </aTexData>
+     <clothData>
+      <ownsCloth value="false" />
+     </clothData>
+    </Item>
+   </aDrawblData3>
+  </Item>
+ </aComponentData3>
+ <aSelectionSets itemType="CPedSelectionSet" />
+<!--This part I don't know much about other than we match the amount of components, the ID and the amount-->
+ <compInfos itemType="CComponentInfo">
+  <!--We add more items depending on the amount of available components that follow the same rules. E.g. they have to be listen in the correct order-->
+  <!--Check the bottom of the page for ID explaination-->
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="0" /> <!--Component ID, in this case HEAD so ID 0-->
+   <hash_FA1F27BF value="0" /> <!--Drawable number, since only 1 is available it's 0-->
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="2" /> <!--Component ID, in this case HAIR so ID 2-->
+   <hash_FA1F27BF value="0" /> <!--Drawable number-->
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="2" />
+   <hash_FA1F27BF value="1" /> <!--Drawable number, since 2 are available it's 1 since we're on the 2nd-->
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="3" /> <!--Component ID, in this case UPPR so ID 3-->
+   <hash_FA1F27BF value="0" />
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="4" />
+   <hash_FA1F27BF value="0" />
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="4" />
+   <hash_FA1F27BF value="1" />
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="8" />
+   <hash_FA1F27BF value="0" />
+  </Item>
+  <Item>
+   <hash_2FD08CEF>none</hash_2FD08CEF>
+   <hash_FC507D28>none</hash_FC507D28>
+   <hash_07AE529D>0 0 0 0 0</hash_07AE529D>
+   <flags value="0" />
+   <inclusions>0</inclusions>
+   <exclusions>0</exclusions>
+   <hash_6032815C>PV_COMP_HEAD</hash_6032815C>
+   <hash_7E103C8B value="0" />
+   <hash_D12F579D value="8" />
+   <hash_FA1F27BF value="1" />
+  </Item>
+ </compInfos>
+ <!--Prop info is used to add data to props, scroll down to the bottom of the page to see where props are defined then scroll back up here-->
+ <propInfo>
+  <numAvailProps value="4" />
+  <aPropMetaData itemType="CPedPropMetaData">
+<!--The way this works is mostly the same as above. We set an amount of props with the amount of textures.-->
+<!--This is the first item in the prop list, e.g. head prop with 3 textures as can be seen in <aAnchors itemType="CAnchorProps">-->
+   <Item>
+    <audioId>none</audioId>
+    <expressionMods>0 0 0 0 0</expressionMods>
+    <texData itemType="CPedPropTexData">
+    <!--the prop texture. Items would have to be added depending on the amount of textures defined. In this case it's prop 1 with 3 textures, so there is 3 items.-->
+     <Item> <!--Item 1 / texture 1-->
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <!--TexId is set to match the number the texture is. in this case it's the first texture so it's 0 since we start at 0, not 1.-->
+      <texId value="0" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+     <Item> <!--Item 2 / texture 2-->
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="1" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+     <Item> <!--Item 3 / texture 3-->
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="2" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+    </texData>
+    <!--renderFlags will be set as a toggle. if on we add <renderFlags>PRF_ALPHA</renderFlags> if off we leave it as below-->
+    <renderFlags />
+    <propFlags value="0" />
+    <flags value="0" />
+    <!--anchorId matches the ID that can be found in the list below.-->
+    <!--In this case it's anchor head and has ID 0-->
+    <!--HEAD: 0,  // head-->
+    <anchorId value="0" />
+    <!--Goes up with the amount of props we have. This one is prop 1, so therefor the ID is 0 since we start at 0 not 1-->
+    <!--Since we have 3 props defined, we will end at propid 2-->
+    <propId value="0" />
+    <hash_AC887A91 value="0" />
+   </Item>
+   <Item>
+    <audioId>none</audioId>
+    <expressionMods>0 0 0 0 0</expressionMods>
+    <texData itemType="CPedPropTexData">
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="0" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="1" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="2" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+    </texData>
+    <renderFlags />
+    <propFlags value="0" />
+    <flags value="0" />
+    <anchorId value="0" />
+    <propId value="1" />
+    <hash_AC887A91 value="0" />
+   </Item>
+   <Item>
+    <audioId>none</audioId>
+    <expressionMods>0 0 0 0 0</expressionMods>
+    <texData itemType="CPedPropTexData">
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="0" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+    </texData>
+    <renderFlags />
+    <propFlags value="0" />
+    <flags value="0" />
+    <anchorId value="0" />
+    <propId value="2" /> <!--Last prop for HEAD-->
+    <hash_AC887A91 value="0" />
+   </Item>
+<!--New item with new anchorId, in this case we're not on the ANCHOR_EYES prop-->
+<!--It works the same as above, other than the value for anchorId is 1-->
+   <Item>
+    <audioId>none</audioId>
+    <expressionMods>0 0 0 0 0</expressionMods>
+    <texData itemType="CPedPropTexData">
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="0" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="1" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+     <Item>
+      <inclusions>0</inclusions>
+      <exclusions>0</exclusions>
+      <texId value="2" />
+      <inclusionId value="0" />
+      <exclusionId value="0" />
+      <distribution value="255" />
+     </Item>
+    </texData>
+<!--In this case we have alpha applied as you can see with this flag-->
+    <renderFlags>PRF_ALPHA</renderFlags>
+    <propFlags value="0" />
+    <flags value="0" />
+    <anchorId value="1" /> <!--ID 1 since we're working on eyes-->
+    <propId value="0" />
+    <hash_AC887A91 value="0" />
+   </Item>
+  </aPropMetaData>
+<!--Here we define the amount of props for a given model and how many textures they have-->
+  <aAnchors itemType="CAnchorProps">
+   <Item>
+<!--This is pretty straight forward. the number defines the amount of textures, and the more we add the more there is to pick from-->
+<!--7 would mean there is 7 textures. 4 7 would mean there is two items, one with 4 textures and one with 7-->
+    <props>3 3 1</props>
+<!--The anchor point means where the prop will be attached to. I will provide the different ID's and names for each anchor point at the bottom of the page so we can add/remove as needed-->    
+    <anchor>ANCHOR_HEAD</anchor>
+   </Item>
+<!--The same goes here, 3 meaning 3 textures and there is only one prop-->
+   <Item>
+    <props>3</props>
+    <anchor>ANCHOR_EYES</anchor>
+   </Item>
+  </aAnchors>
+ </propInfo>
+ <dlcName />
+</CPedVariationInfo>
+
+<!--ANCHOR_ points
+HEAD           : 0,  // head
+EYES           : 1,  // eyes
+EARS           : 2,  // ears
+MOUTH          : 3,  // mouth
+LEFT_HAND      : 4,  // lhand
+RIGHT_HAND     : 5,  // rhand
+LEFT_WRIST     : 6,  // lwrist
+RIGHT_WRIST    : 7,  // rwrist
+HIP            : 8,  // hip
+LEFT_FOOT      : 9,  // lfoot
+RIGHT_FOOT     : 10, // rfoot
+UNK_604819740  : 11, // ???
+UNK_2358626934 : 12, // ???
+-->
+
+<!--Component list
+HEAD : 0,  // Head
+BERD : 1,  // Beard
+HAIR : 2,  // Hair
+UPPR : 3,  // Arms
+LOWR : 4,  // Pants
+HAND : 5,  // Parachute, bag, etc...
+FEET : 6,  // Foots
+TEEF : 7,  // Tie, scarf, necklace, etc..
+ACCS : 8,  // T-Shirt
+TASK : 9,  // Bulletproof, bag, etc...
+DECL : 10, // Decals
+JBIB : 11, // Vest, sweat, jacket, etc...
+-->

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CPedVariationInfo>
+  <bHasTexVariations value="true" />
+  <bHasDrawblVariations value="true" />
+  <bHasLowLODs value="true" />
+  <bIsSuperLOD value="false" />
+  <availComp>255 255 255 255 255 255 255 255 255 255 255 255</availComp>
+  <aComponentData3 itemType="CPVComponentData"/>
+  <aSelectionSets itemType="CPedSelectionSet" />
+  <compInfos itemType="CComponentInfo"/>
+  <propInfo>
+    <numAvailProps value="0" />
+    <aPropMetaData itemType="CPedPropMetaData"/>
+    <aAnchors itemType="CAnchorProps"/>
+  </propInfo>
+  <dlcName />
+</CPedVariationInfo>
