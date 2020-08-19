@@ -22,7 +22,7 @@ namespace YMTEditor
         {
             if (!hasInternet()) return;
             var client = new HttpClient();
-            var uri = new Uri("https://raw.githubusercontent.com/Big-Yoda/ymt-editor/master/version.json");
+            var uri = new Uri("https://raw.githubusercontent.com/Big-Yoda/YmtEditor/master/version.json");
             Stream respStream = await client.GetStreamAsync(uri);
             versionData = new JsonSerializer().Deserialize<VersionData>(new JsonTextReader(new StreamReader(respStream)));
             Debug.WriteLine(float.Parse(Properties.Resources.version, CultureInfo.InvariantCulture.NumberFormat).ToString());
